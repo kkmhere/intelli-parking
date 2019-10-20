@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmation_2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_main"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Confirmation"
+            android:textSize="17sp"
+            android:textColor="#ffff"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Your booking for Slot 2 has been confirmed!!"
+            android:textSize="25sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="30dp"
+            android:id="@+id/confirmed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="monospace"
+            android:text="Click the green button to receive the confirmation mail.. "
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/forwardEmail"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearButtons"
+        android:orientation="horizontal"
+        android:layout_marginTop="420dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:onClick="success"
+            android:src="@drawable/success" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/error"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

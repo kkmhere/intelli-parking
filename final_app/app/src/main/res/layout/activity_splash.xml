@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashActivity"
+    android:background="@drawable/bg_main">
+
+    <ImageView
+        android:id="@+id/parking"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
+        app:srcCompat="@mipmap/parking_sign" />
+
+</RelativeLayout>
